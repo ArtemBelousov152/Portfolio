@@ -1,30 +1,17 @@
 .portfolioHeader {
     &__title {
-        margin-top: 5px;
+        margin-top: 20px;
         text-align: center;
-        color: rgb(56, 56, 56);
-    }
-    &__descr {
-        color: rgb(56, 56, 56);
-        margin-top: 10px;
-        text-align: center;
+        color: $title-color;
     }
     &__return {
         text-decoration: none;
-        &_btn {
-            display: block;
-            margin: 0 auto;
-            margin-top: 10px;
-            width: 200px;
-            height: 80px;
-            font-size: 18px;
-        }
     }
 }
 
 .projects {
     display: flex;
-    margin: 15px auto 0 auto;
+    margin: 25px auto 0 auto;
     justify-content: center;
     &__slider {
         width: 1200px;
@@ -44,11 +31,6 @@
             margin-right: 100px;
             transform: rotate(180deg);
         }
-    }
-    &__descr {
-        text-align: center;
-        font-weight: 200;
-        margin-bottom: 30px;
     }
     &__list {
         margin-top: 20px;

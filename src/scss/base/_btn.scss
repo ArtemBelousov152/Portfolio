@@ -8,16 +8,24 @@
     text-align: center;
     letter-spacing: 3px;
     font-weight: 600;
-    color: #524f4e;
+    color: $title-color;
     background: white;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
-    text-shadow: 2px 2px 6px rgb(128, 127, 127);
+    text-shadow: 2px 2px 6px rgb(255, 253, 208);
     transition: .3s;
     &:hover {
-        background: #b3b0b0;
+        background: #b2b0b3;
         box-shadow: 0 15px 20px rgba(88, 88, 88, 0.4);
         text-shadow: 2px 2px 3px rgb(223, 221, 221);
         color: white;
         transform: translateY(-7px);
+    }
+    &__return {
+        display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 200px;
+            height: 80px;
+            font-size: 18px;
     }
 }
