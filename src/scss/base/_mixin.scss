@@ -1,0 +1,17 @@
+@mixin textColor {
+    color: $main-color;
+    text-shadow: 1px 1px 1px $title-color;
+}
+
+@mixin divider {
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $main-color;
+        border-radius: 5px;
+    }
+}

@@ -2,9 +2,12 @@
     &__title {
         margin-top: 20px;
         text-align: center;
-        color: $title-color;
+        @include textColor;
     }
     &__return {
+        margin: 0 auto;
+        display: block;
+        width: 200px;
         text-decoration: none;
     }
 }
@@ -21,10 +24,10 @@
         margin-left: 100px;
         margin-top: 70px;
         cursor: pointer;
-        fill: rgb(105, 105, 105);
+        fill: $main-color;
         transition: all .6s;
         &:hover {
-            fill: rgb(0, 0, 0);
+            fill: $title-color;
         }
         &-left {
             margin-left: 0;
@@ -78,13 +81,13 @@
         height: 30px;
         border: none;
         transition: all .4s;
-        background-color: rgb(172, 172, 172);
+        background-color: $main-color;
         &:hover {
-            background-color: rgb(99, 99, 99);
+            background-color: #9e8129;
         }
     }
     .tns-nav-active {
-        background-color: black;
+        background-color: $title-color;
     }
     .gitImg {
         position: absolute;
