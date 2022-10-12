@@ -1,0 +1,119 @@
+.portfolioHeader {
+    &__title {
+        margin-top: 5px;
+        text-align: center;
+        color: rgb(56, 56, 56);
+    }
+    &__descr {
+        color: rgb(56, 56, 56);
+        margin-top: 10px;
+        text-align: center;
+    }
+    &__return {
+        text-decoration: none;
+        &_btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 200px;
+            height: 80px;
+            font-size: 18px;
+        }
+    }
+}
+
+.projects {
+    display: flex;
+    margin: 15px auto 0 auto;
+    justify-content: center;
+    &__slider {
+        width: 1200px;
+    }
+    &__arrow {
+        width: 100px;
+        margin-left: 100px;
+        margin-top: 70px;
+        cursor: pointer;
+        fill: rgb(105, 105, 105);
+        transition: all .6s;
+        &:hover {
+            fill: rgb(0, 0, 0);
+        }
+        &-left {
+            margin-left: 0;
+            margin-right: 100px;
+            transform: rotate(180deg);
+        }
+    }
+    &__descr {
+        text-align: center;
+        font-weight: 200;
+        margin-bottom: 30px;
+    }
+    &__list {
+        margin-top: 20px;
+        display: grid;
+        grid-template: 220px / 320px 320px;
+        gap: 30px;
+    }
+    li {
+        margin-top: 10px;
+        list-style-type: none;
+        img {
+            width: 100%;
+            height: 170px;
+            display: block;
+            margin: 0 auto;
+            padding: 20px 0 10px 0;
+            object-fit: fill;
+        }
+    }
+    button {
+        width: 150px;
+        height: 40px;
+    }
+    .left {
+        margin-right: 10px;
+    }
+}
+
+.tns-outer {
+    position: relative;
+    .tns-nav {
+        position: absolute;
+        bottom: -10%;
+        left: 24%;
+        width: 600px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .tns-item {
+        position: relative;
+    }
+    [data-nav] {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        border: none;
+        transition: all .4s;
+        background-color: rgb(172, 172, 172);
+        &:hover {
+            background-color: rgb(99, 99, 99);
+        }
+    }
+    .tns-nav-active {
+        background-color: black;
+    }
+    .gitImg {
+        position: absolute;
+        left: 20px;
+        z-index: 100;
+        width: 200px;
+        left: 32px;
+        bottom: 29px;
+        transition: all .6s;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
