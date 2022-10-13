@@ -19,6 +19,33 @@
     &__slider {
         width: 1200px;
     }
+    &__mobile {
+        display: none;
+        &-wrapper {
+            width: 500px;
+            margin: 0 auto;
+        }
+        &-img {
+            width: 500px;
+        }
+        &-item {
+            margin-top: 40px;
+            a {
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+            position: relative;
+            .gitImg {
+                position: absolute;
+                left: 20px;
+                z-index: 100;
+                width: 110px;
+                left: 5px;
+                bottom: 10px;
+            }
+        }
+    }
     &__arrow {
         width: 100px;
         margin-left: 100px;
