@@ -27,7 +27,9 @@ body {
         }
         h2 {
             line-height: 26px;
+            position: relative;
             @include textColor;
+            @include divider;
         }
         h2,h3,h4 {
             margin-bottom: 20px;
@@ -41,19 +43,9 @@ body {
         row-gap: 20px;
         column-gap: 60px;
     }
-    &__start {
-        h2 {
-            position: relative;
-            @include divider;
-        }
-    }
     &__lang {
         margin-top: 15px;
         margin-left: -30px;
-        h2 {
-            position: relative;
-            @include divider;
-        }
         ul {
             margin-left: 30px;
         }
@@ -61,10 +53,6 @@ body {
     &__contacts {
         line-height: 36px;
         // justify-self: center;
-        h2 {
-            position: relative;
-            @include divider;
-        }
         ul {
             li {
                 span {
@@ -87,10 +75,6 @@ body {
         }
     }
     &__education {
-        h2 {
-            position: relative;
-            @include divider;
-        }
         grid-row-start: 3;
         &-header {
             font-weight: 700;
@@ -104,20 +88,12 @@ body {
         }
     }
     &__skills {
-        h2 {
-            position: relative;
-            @include divider;
-        }
         ul {
             padding-left: 20px;
             list-style-type: disc;
         }
     }
     &__experience {
-        h2 {
-            position: relative;
-            @include divider;
-        }
         font-size: 14px;
         line-height: 20px;
         grid-row-start: 2;
@@ -142,17 +118,9 @@ body {
         }
     }
     &__about {
-        h2 {
-            position: relative;
-            @include divider;
-        }
         text-align: justify;
     }
     &__courses {
-        h2 {
-            position: relative;
-            @include divider;
-        }
         margin-left: -30px;
         margin-top: 10px;
         ul {
