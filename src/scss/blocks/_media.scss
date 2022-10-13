@@ -14,22 +14,54 @@
         height: 70px;
         width: 170px;
     }
+
+    .resume {
+        &__container {
+            width: 740px;
+        }
+       &__grid {
+            grid-template-columns: 330px 330px;
+       }
+       &__about {
+        text-align: left;
+       }
+    }
 }
 
 @media (max-width: 768px) {
     .navigation {
         width: 540px;
     }
+    .resume {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 530px;
+        }
+       &__grid {
+            grid-template-columns: 500px;
+       }
+       &__about {
+        text-align: left;
+       }
+    }
 }
 
 @media (max-width: 576px) {
-    body {
-        text-align: center;
-    }
     .navigation {
         width: 320px;
         height: 200px;
         flex-direction: column;
         margin-top: 35px;
+        text-align: center;
+    }
+    .resume {
+        &__container {
+            width: 320px;
+        }
+       &__grid {
+            grid-template-columns: 300px;
+       }
     }
 }
