@@ -27,6 +27,7 @@
         }
         &-img {
             width: 500px;
+            box-shadow: 3px 3px 6px $second-color, -3px -3px 6px $second-color;
         }
         &-item {
             margin-top: 40px;
