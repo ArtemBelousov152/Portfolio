@@ -27,7 +27,7 @@
         fill: $main-color;
         transition: all .6s;
         &:hover {
-            fill: $title-color;
+            fill: $second-color;
         }
         &-left {
             margin-left: 0;
@@ -82,12 +82,14 @@
         border: none;
         transition: all .4s;
         background-color: $main-color;
+        box-shadow: 1px 1px 1px $second-color;
         &:hover {
             background-color: #9e8129;
         }
     }
     .tns-nav-active {
-        background-color: $title-color;
+        background-color: $second-color;
+        box-shadow: 1px 1px 1px $main-color;
     }
     .gitImg {
         position: absolute;

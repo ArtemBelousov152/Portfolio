@@ -1,6 +1,6 @@
 @mixin textColor {
     color: $main-color;
-    text-shadow: 1px 1px 1px $title-color;
+    text-shadow: 1px 1px 1px $second-color;
 }
 
 @mixin divider {

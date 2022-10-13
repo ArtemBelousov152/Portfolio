@@ -1,0 +1,35 @@
+@media (max-width: 992px) {
+    .header {
+        &__greatings {
+            font-size: 27px;
+        }
+        &__title {
+            font-size: 29px;
+        }
+        &__descr {
+            font-size: 26px;
+        }
+    }
+    .navigation__button {
+        height: 70px;
+        width: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        text-align: center;
+    }
+    .navigation {
+        width: 320px;
+        height: 200px;
+        flex-direction: column;
+        margin-top: 35px;
+    }
+}

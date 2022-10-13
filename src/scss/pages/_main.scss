@@ -1,6 +1,7 @@
 .header {
     @include textColor;
     margin-top: 20px;
+    line-height: 36px;
     &__greatings {
         text-align: center;
         font-size: 30px;
@@ -9,8 +10,7 @@
         text-align: center;
         margin-top: 30px;
         font-weight: 700;
-        font-style: 35px;
-        line-height: 35px;
+        font-size: 35px;
     }
     &__descr {
         text-align: center;
@@ -22,9 +22,9 @@
 .photo {
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 300px;
-    box-shadow: 3px 3px 6px $title-color, -3px -3px 6px $title-color;
+    box-shadow: 3px 3px 6px $second-color, -3px -3px 6px $second-color;
 }
 
 .navigation {
