@@ -12,6 +12,10 @@ body {
 .resume {
     &__wrapper {
         margin-left: 30px;
+    .git {
+        width: 16px;
+        margin-right: 6px;
+    }
     }
     &__title {
         text-align: center;
